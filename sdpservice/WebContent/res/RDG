@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:serviceinput="http://smartkitchen-env.elasticbeanstalk.com/SDPService/onto/inputonontology/"
+   xmlns:serviceoutput="http://smartkitchen-env.elasticbeanstalk.com/SDPService/onto/outputonontology/"
+   xmlns:sswap="http://sswapmeet.sswap.info/sswap/"
+>
+  <rdf:Description rdf:nodeID="ub23bL16C34">
+    <serviceoutput:RecipeImageUrl> </serviceoutput:RecipeImageUrl>
+    <serviceoutput:IngAmount> </serviceoutput:IngAmount>
+    <serviceoutput:RecipeInstruction> </serviceoutput:RecipeInstruction>
+    <rdf:type rdf:resource="http://smartkitchen-env.elasticbeanstalk.com/SDPService/onto/outputonontology/outputinfo"/>
+    <serviceoutput:IngName> </serviceoutput:IngName>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Object"/>
+    <serviceoutput:IngDescription> </serviceoutput:IngDescription>
+    <serviceoutput:RecipeName> </serviceoutput:RecipeName>
+    <serviceoutput:RecipeVideoUrl> </serviceoutput:RecipeVideoUrl>
+    <serviceoutput:IngUnit> </serviceoutput:IngUnit>
+    <serviceoutput:IngImageUrl> </serviceoutput:IngImageUrl>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://smartkitchen-env.elasticbeanstalk.com/SDPService/getService">
+    <sswap:oneLineDescription> Put your ingredient and get the recipe</sswap:oneLineDescription>
+    <sswap:name>Recipe Service</sswap:name>
+    <sswap:operatesOn rdf:nodeID="ub23bL12C22"/>
+    <rdf:type rdf:resource="http://smartkitchen-env.elasticbeanstalk.com/SDPService/onto/outputonontology/RecipeInformationService"/>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Resource"/>
+    <sswap:providedBy rdf:resource="http://smartkitchen-env.elasticbeanstalk.com/SDPService/resourceProvider"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub23bL13C30">
+    <rdf:type rdf:resource="http://smartkitchen-env.elasticbeanstalk.com/SDPService/onto/inputonontology/inputinfo"/>
+    <serviceinput:IngredientName> </serviceinput:IngredientName>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Subject"/>
+    <sswap:mapsTo rdf:nodeID="ub23bL16C34"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub23bL12C22">
+    <sswap:hasMapping rdf:nodeID="ub23bL13C30"/>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Graph"/>
+  </rdf:Description>
+</rdf:RDF>
